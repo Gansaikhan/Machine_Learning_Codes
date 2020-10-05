@@ -107,8 +107,8 @@ test_eval = cifar100model.evaluate(x_test, y_test_one_hot, verbose=0)
 print('Test loss:', test_eval[0])
 print('Test accuracy:', test_eval[1])
 
-accuracy = cifar100_train.history['acc']
-val_accuracy = cifar100_train.history['val_acc']
+accuracy = cifar100_train.history['accuracy']
+val_accuracy = cifar100_train.history['val_accuracy']
 loss = cifar100_train.history['loss']
 val_loss = cifar100_train.history['val_loss']
 epochs = range(len(accuracy))
